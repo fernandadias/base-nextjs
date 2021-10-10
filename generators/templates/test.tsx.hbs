@@ -1,0 +1,11 @@
+import { render, screen } from '@testing-library/react'
+
+import {{properCase name}} from '.'
+
+describe('<{{properCase name}}/>', () => {
+  it('should render the heading', () => {
+    render(<{{properCase name}} />)
+
+    expect(screen.getByRole('heading', { name: /{{properCase name}}/i })).toBeInTheDocument()
+  })
+})
